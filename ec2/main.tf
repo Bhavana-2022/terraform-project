@@ -1,4 +1,4 @@
-resource "aws_instance" "my first instance" {
+resource "aws_instance" "myfirstinstance" {
     ami = var.ami
     instance_type = var.instance_type
     security_groups = var.security_groups
@@ -10,4 +10,14 @@ resource "aws_instance" "my first instance" {
       delete_on_termination = true
     }
 
+}
+
+
+resource "aws_s3_bucket" "thisiss3" {
+    bucket = "myawsbucket"
+    tags = {
+        name = "myawsbucket"
+    
+    }
+  
 }
