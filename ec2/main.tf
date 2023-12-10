@@ -15,6 +15,7 @@ resource "aws_instance" "myfirstinstance" {
 
 resource "aws_s3_bucket" "thisiss3" {
     bucket = "myawsbucket"
+    force_destroy = true
     tags = {
         name = "myawsbucket"
     
