@@ -52,3 +52,38 @@ variable "volume_size" {
     default = "12"
   
 }
+
+
+variable "cidr_block" {
+    description = "this is replace of vpc"
+    type = string
+    default = "10.0.0.0/16"
+    
+  
+}
+
+
+variable "subnetcidr_block" {
+    description = "this is replace of subnet cidr"
+    type = string
+    default = "10.0.0.0/16"
+  
+}
+
+
+variable "subnetavailability_zone" {
+    description = "this is replace of subnet availabilityzone"
+    type = string
+    default = "us-east-1"
+  
+}
+
+
+variable "aws_route_table" {
+    description = "this is the replace of routetable"
+    type = string
+    default = "10.0.0.0/24"
+  
+}
+
+
